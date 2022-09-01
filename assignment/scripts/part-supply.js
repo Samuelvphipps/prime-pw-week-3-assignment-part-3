@@ -54,14 +54,17 @@ if (changes>0) {console.log('Added', changes, 'parts.');}
 else if (changes===0){console.log('No Change');}
 else {console.log('Removed', -changes, 'parts.')}
 ;
-
 };
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
+let sumSupplyChanges=0
+for(let i = 0; i<supplyChanges.length; i++){sumSupplyChanges += supplyChanges[i]};
+console.log(sumSupplyChanges)
 
-
+/*I found examples using this format for sums using loops online. I believe this is 
+within the fair code usage policy as it seems like a generic format, is this correct?*/
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
@@ -70,3 +73,8 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let parts=572;
+let box =0;
+while(parts>7){parts-=7;box+=1};
+console.log(`The number of boxes filled with 7 parts is ${box}`);
+console.log(`The number of leftover parts is ${parts}`);
