@@ -11,7 +11,7 @@ console.log(partsNeeded);
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
 let supplyChanges=[3, 5, -6, 0, 7, 11];
-
+console.log(supplyChanges);
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
 console.log(supplyChanges[1]);
@@ -21,7 +21,7 @@ console.log(supplyChanges[1]);
 console.log('4. Removed item:');
 console.log('Removed', supplyChanges[supplyChanges.length -1], 'from supply changes.');
 supplyChanges.pop();
-
+console.log(supplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
@@ -63,8 +63,7 @@ let sumSupplyChanges=0
 for(let i = 0; i<supplyChanges.length; i++){sumSupplyChanges += supplyChanges[i]};
 console.log(sumSupplyChanges)
 
-/*I found examples using this format for sums using loops online. I believe this is 
-within the fair code usage policy as it seems like a generic format, is this correct?*/
+
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
