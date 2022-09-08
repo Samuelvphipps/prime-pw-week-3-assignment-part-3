@@ -36,9 +36,15 @@ console.log(partsNeeded);
 console.log('6. Showing supplyChanges...');
 for(let x=0; x<supplyChanges.length; x++)
 {supplyChanges[x];
-if (supplyChanges[x]>0) {console.log('Added', supplyChanges[x], 'parts.');}
-else if (supplyChanges[x]===0){console.log('No Change');}
-else {console.log('Removed', -supplyChanges[x], 'parts.')}
+if (supplyChanges[x]>0) {
+    console.log('Added', supplyChanges[x], 'parts.');
+}
+else if (supplyChanges[x]===0){
+    console.log('No Change');
+}
+else {
+    console.log('Removed', -supplyChanges[x], 'parts.')
+}
 ;
 
 };
@@ -50,9 +56,15 @@ console.log('7. Showing supplyChanges with "for of" loop');
 
 for(let changes of supplyChanges)
 {
-if (changes>0) {console.log('Added', changes, 'parts.');}
-else if (changes===0){console.log('No Change');}
-else {console.log('Removed', -changes, 'parts.')}
+if (changes>0) {
+    console.log('Added', changes, 'parts.');
+}
+else if (changes===0){
+    console.log('No Change');
+}
+else {
+    console.log('Removed', -changes, 'parts.')
+}
 ;
 };
 
@@ -60,7 +72,9 @@ else {console.log('Removed', -changes, 'parts.')}
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
 let sumSupplyChanges=0
-for(let i = 0; i<supplyChanges.length; i++){sumSupplyChanges += supplyChanges[i]};
+for(let i = 0; i<supplyChanges.length; i++){
+    sumSupplyChanges += supplyChanges[i]
+};
 console.log(sumSupplyChanges)
 
 
@@ -73,6 +87,8 @@ console.log(sumSupplyChanges)
 console.log('9. Filling boxes with a "while" loop');
 let parts=572;
 let box =0;
-while(parts>7){parts-=7;box+=1};
+while(parts>7){
+    parts-=7;box+=1
+};
 console.log(`The number of boxes filled with 7 parts is ${box}`);
 console.log(`The number of leftover parts is ${parts}`);
